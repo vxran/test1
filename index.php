@@ -89,12 +89,17 @@ function getRow(x) {
                 if(isset($_GET['first_name'])){
             $sql = "UPDATE users SET first='".$_GET['first_name']."'WHERE id =".$_GET['id'];
             if ($conn->query($sql) === TRUE){
-       
+                echo '<script>';
+                echo 'window.location.href="index.php";';
+                echo '</script>';
             }
             }
             if(isset($_GET['last_name'])){
             $sql = "UPDATE users SET last='".$_GET['last_name']."'WHERE id =".$_GET['id'];
             if ($conn->query($sql) === TRUE){
+                echo '<script>';
+                echo 'window.location.href="index.php";';
+                echo '</script>';
        
             }
             }
