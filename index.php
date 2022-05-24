@@ -90,8 +90,8 @@ function getRow(x) {
 
                         echo '<a href="edit.php?edit='.$row["first"]." ".$row["last"].'"><button class="btn btn-outline-primary btn-sm">Edit</button></a>';
 
-                       echo '<a href="index.php?delete='.$row["id"].'"><button class="btn btn-danger">delete</button></a>';
-
+                       echo '<a href="index.php?delete='.$row["id"].'"><button class="btn btn-outline-primary btn-sm">delete</button></a>';
+                       
 			//echo '<input type="submit" name="delete'.$row["id"].'" value="Delete" class="btn btn-sm">';
 			echo '</form>';
                     echo "</td>";
