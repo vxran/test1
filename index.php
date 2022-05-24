@@ -78,8 +78,8 @@ function getRow(x) {
                     echo '<td>'.$row["first"].'</td>';
                     echo '<td>'.$row["last"].'</td>';
                     echo "<td>";
-			if(isset($_POST['delete')){
-			$sql = "DELETE FROM users WHERE id =".$_POST['delete');
+			if(isset($_POST['delete'])){
+			$sql = "DELETE FROM users WHERE id =".$_POST['delete'];
 			if ($conn->query($sql) === TRUE){
              
 			}
