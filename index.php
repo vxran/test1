@@ -87,7 +87,7 @@ function getRow(x) {
 			}
 			}
                         echo '<a href="view.php"><button class="btn btn-primary btn-sm">View</button></a>';
-                        echo '<a href="edit.php?edit='.$row["id"].'"><button class="btn btn-outline-primary btn-sm">Edit</button></a>';
+                        echo '<a href="edit.php?edit='.$row["first"]." ".$row["last"].'"><button class="btn btn-outline-primary btn-sm">Edit</button></a>';
                        
 			echo '<input type="submit" name="delete'.$row["id"].'" value="Delete" class="btn btn-sm">';
 			echo '</form>';
