@@ -86,7 +86,7 @@ function getRow(x) {
                 echo '</script>';
 			}
 			}
-                        echo '<a href="view.php"><button class="btn btn-primary btn-sm">View</button></a>';
+                        // echo '<a href="view.php"><button class="btn btn-primary btn-sm">View</button></a>';
 
                         echo '<a href="view.php?view='.$row["first"]." ".$row["last"].'"><button class="btn btn-primary btn-sm">View</button></a>';
 
