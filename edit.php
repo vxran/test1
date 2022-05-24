@@ -41,12 +41,17 @@
     <main role="main" class="flex-shrink-0">
         <div class="container">
             <h1>Edit User</h1>
-            <form action="" method="POST">
-                <div class="form-group">
-                    <label for="name">Name</label>
 
-                    <input type="text" class="form-control" id="name" value="<?php echo $_GET['first']; echo ' '; echo $_GET['last'];?>" placeholder="Enter name">
-                    <small class="form-text text-muted">Help message here.</small>
+            <form action="index.php" method="POST">
+                <div class="form-group">
+                    <label for="name">First Name</label>
+
+                    <input type="text" class="form-control" id="first" name="first_name" value="<?php echo $_GET['first']; ?>" placeholder="Enter First Name">
+                    
+                     <label for="name">Last Name</label>
+
+                    <input type="text" class="form-control" id="last" name="last_name" value="<?php echo $_GET['last'];?>" placeholder="Enter Second Name">
+
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
