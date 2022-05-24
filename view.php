@@ -41,7 +41,7 @@
     <main role="main" class="flex-shrink-0">
         <div class="container">
             <h1>View User Detail</h1>
-            <p>Name: Pisyek</p>
+            <p>Name: <?php echo $_GET['view'];?></p>
         </div>
     </main>
       
