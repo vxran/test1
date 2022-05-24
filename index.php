@@ -93,7 +93,7 @@ function getRow(x) {
                     echo "</tr>";
 			}
                 }else{
-		echo "no results";
+		echo "wew no results";
 }
                 ?>
                 </tbody>
