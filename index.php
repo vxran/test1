@@ -78,18 +78,19 @@ function getRow(x) {
                     echo '<td>'.$row["first"].'</td>';
                     echo '<td>'.$row["last"].'</td>';
                     echo "<td>";
-			if(isset($_POST['delete'.$row["id"]])){
-			$sql = "DELETE FROM users WHERE id =".$row['id'];
+			if(isset($_GET['delete'])){
+			$sql = "DELETE FROM users WHERE id =".$_GET['delete'];
 			if ($conn->query($sql) === TRUE){
-                echo '<script>';
-                echo 'location.reload();';
-                echo '</script>';
+                // echo '<script>';
+                // echo 'location.reload();';
+                // echo '</script>';
 			}
 			}
                         echo '<a href="view.php"><button class="btn btn-primary btn-sm">View</button></a>';
                         echo '<a href="edit.php?edit='.$row["first"]." ".$row["last"].'"><button class="btn btn-outline-primary btn-sm">Edit</button></a>';
-                       
-			echo '<input type="submit" name="delete'.$row["id"].'" value="Delete" class="btn btn-sm">';
+
+                       echo '<a href="index.php?delete='.$row["first"]." ".$row["last"].'"><button class="btn btn-outline-primary btn-sm">Edit</button></a>';
+			//echo '<input type="submit" name="delete'.$row["id"].'" value="Delete" class="btn btn-sm">';
 			echo '</form>';
                     echo "</td>";
                     echo "</tr>";
