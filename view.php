@@ -42,7 +42,6 @@
         <div class="container">
             <h1>View User Detail</h1>
             <p>Name: Pisyek</p>
-            <p>Email: pisyek@gmail.com</p>
         </div>
     </main>
       
