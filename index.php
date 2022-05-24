@@ -81,7 +81,9 @@ function getRow(x) {
 			if(isset($_POST['delete'.$row["id"]])){
 			$sql = "DELETE FROM users WHERE id =".$row['id'];
 			if ($conn->query($sql) === TRUE){
-                    echo 'location.reload();';
+                    ?>
+                    location.reload();
+                    <?php
 			}
 			}
                         echo '<a href="view.html"><button class="btn btn-primary btn-sm">View</button></a>';
