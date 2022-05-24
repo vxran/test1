@@ -42,7 +42,7 @@
         <div class="container">
             <h1>Edit User</h1>
 
-            <form action="index.php" method="POST">
+            <form action="index.php" method="GET">
                 <div class="form-group">
                     <label for="name">First Name</label>
 
