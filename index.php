@@ -86,6 +86,18 @@ function getRow(x) {
                 echo '</script>';
 			}
 			}
+                if(isset($_GET['first_name'])){
+            $sql = "UPDATE users SET first= ".$_GET['first_name'])."WHERE id =".$_GET['id'];
+            if ($conn->query($sql) === TRUE){
+       
+            }
+            }
+            if(isset($_GET['last_name'])){
+            $sql = "UPDATE users SET first= ".$_GET['last_name'])."WHERE id =".$_GET['id'];
+            if ($conn->query($sql) === TRUE){
+       
+            }
+            }
                         // echo '<a href="view.php"><button class="btn btn-primary btn-sm">View</button></a>';
 
                         echo '<a href="view.php?view='.$row["first"]." ".$row["last"].'"><button class="btn btn-primary btn-sm">View</button></a>';

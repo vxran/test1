@@ -46,12 +46,13 @@
                 <div class="form-group">
                     <label for="name">First Name</label>
 
-                    <input type="text" class="form-control" id="first" name="first_name" value="<?php echo $_GET['first']; ?>" placeholder="Enter First Name">
+                    <input type="text" class="form-control" id="first" name="first_name" value="<?php echo $_GET['first_name']; ?>" placeholder="Enter First Name">
                     
                      <label for="name">Last Name</label>
 
-                    <input type="text" class="form-control" id="last" name="last_name" value="<?php echo $_GET['last'];?>" placeholder="Enter Second Name">
+                    <input type="text" class="form-control" id="last" name="last_name" value="<?php echo $_GET['last_name'];?>" placeholder="Enter Last Name">
 
+                    <input type="hidden" name="id" value="<?php echo $_GET['id'];?>">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
