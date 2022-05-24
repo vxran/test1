@@ -88,10 +88,10 @@ function getRow(x) {
 			}
                         // echo '<a href="view.php"><button class="btn btn-primary btn-sm">View</button></a>';
 
-                        echo '<a href="view.php?view='.$row["first"]." ".$row["last"].'&id='.$row["id"
-                    ].'"><button class="btn btn-primary btn-sm">View</button></a>';
+                        echo '<a href="view.php?view='.$row["first"]." ".$row["last"].'"><button class="btn btn-primary btn-sm">View</button></a>';
 
-                        echo '<a href="edit.php?edit='.$row["first"]." ".$row["last"].'"><button class="btn btn-outline-primary btn-sm">Edit</button></a>';
+                        echo '<a href="edit.php?first='.$row["first"].'&last='.$row["last"].'&id='.$row["id"
+                    ].'"><button class="btn btn-outline-primary btn-sm">Edit</button></a>';
 
                        echo '<a href="index.php?delete='.$row["id"].'"><button class="btn btn-outline-primary btn-sm">delete</button></a>';
 
