@@ -69,23 +69,14 @@ function getRow(x) {
                 </thead>
                 <tbody>
                 <?php
-                $sql = "SELECT id, first, last FROM users";
-                $result = $conn->query($sql);
-                if ($result->num_rows > 0){
-		    while($row = $result->fetch_assoc()) {
-                    echo "<tr>";
-                    echo '<th scope="row">'.$row["id"].'</th>';
-                    echo '<td>'.$row["first"].'</td>';
-                    echo '<td>'.$row["last"].'</td>';
-                    echo "<td>";
-			if(isset($_GET['delete'])){
-			$sql = "DELETE FROM users WHERE id =".$_GET['delete'];
-			if ($conn->query($sql) === TRUE){
+                        if(isset($_GET['delete'])){
+            $sql = "DELETE FROM users WHERE id =".$_GET['delete'];
+            if ($conn->query($sql) === TRUE){
                 echo '<script>';
                 echo 'window.location.href="index.php";';
                 echo '</script>';
-			}
-			}
+            }
+            }
                 if(isset($_GET['first_name'])){
             $sql = "UPDATE users SET first='".$_GET['first_name']."'WHERE id =".$_GET['id'];
             if ($conn->query($sql) === TRUE){
@@ -110,6 +101,16 @@ function getRow(x) {
        
             }
             }
+                $sql = "SELECT id, first, last FROM users";
+                $result = $conn->query($sql);
+                if ($result->num_rows > 0){
+		    while($row = $result->fetch_assoc()) {
+                    echo "<tr>";
+                    echo '<th scope="row">'.$row["id"].'</th>';
+                    echo '<td>'.$row["first"].'</td>';
+                    echo '<td>'.$row["last"].'</td>';
+                    echo "<td>";
+	
 
                         // echo '<a href="view.php"><button class="btn btn-primary btn-sm">View</button></a>';
 
