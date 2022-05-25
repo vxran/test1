@@ -105,7 +105,7 @@ function getRow(x) {
             }
 
             if(isset($_GET['add_first_name']) || isset($_GET['add_last_name'])){
-            $sql = "INSERT INTO users VALUES (".echo '<script>Math.random() * (100-1) +1</script>'.",'".$_GET['first_name']."','".$_GET['last_name']."');";
+            $sql = "INSERT INTO users (first,last) VALUES ('".$_GET['first_name']."','".$_GET['last_name']."')";
             if ($conn->query($sql) === TRUE){
                 echo '<script>';
                 echo 'window.location.href="index.php";';
