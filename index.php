@@ -104,12 +104,9 @@ function getRow(x) {
             }
             }
 
-            if(isset($_GET['add_first_name']) || isset($_GET['add_last_name'])){
-            $sql = "INSERT INTO users (first,last) VALUES ('".$_GET['add_first_name']."','".$_GET['add_first_name']."')";
+            if(isset($_GET['add_first_name'])){
+            $sql = "INSERT INTO users (first,last) VALUES ('".$_GET['add_first_name']."','".$_GET['add_last_name']."')";
             if ($conn->query($sql) === TRUE){
-                echo '<script>';
-                echo 'window.location.href="index.php";';
-                echo '</script>';
        
             }
             }
