@@ -28,7 +28,7 @@
                         <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="create.html">Create</a>
+                        <a class="nav-link" href="create.php">Create</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-md-0">
@@ -43,9 +43,11 @@
             <h1>Create New User</h1>
             <form action="" method="POST">
                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter name">
-                    <small class="form-text text-muted">Help message here.</small>
+                    <label for="name">First Name</label>
+                    <input type="text" class="form-control" id="first" placeholder="Enter First Name">
+                     <label for="name">Last Name</label>
+                    <input type="text" class="form-control" id="last" placeholder="Enter Last Name">
+                 
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
