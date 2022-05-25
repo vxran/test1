@@ -103,6 +103,17 @@ function getRow(x) {
        
             }
             }
+
+            if(isset($_GET['add_first_name']) || isset($_GET['add_last_name'])){
+            $sql = "INSERT INTO users VALUES ($_GET['first_name'],$_GET['last_name'])";
+            if ($conn->query($sql) === TRUE){
+                echo '<script>';
+                echo 'window.location.href="index.php";';
+                echo '</script>';
+       
+            }
+            }
+
                         // echo '<a href="view.php"><button class="btn btn-primary btn-sm">View</button></a>';
 
                         echo '<a href="view.php?view='.$row["first"]." ".$row["last"].'"><button class="btn btn-primary btn-sm">View</button></a>';

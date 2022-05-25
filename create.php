@@ -41,12 +41,12 @@
     <main role="main" class="flex-shrink-0">
         <div class="container">
             <h1>Create New User</h1>
-            <form action="" method="POST">
+            <form action="index.php" method="GET">
                 <div class="form-group">
                     <label for="name">First Name</label>
-                    <input type="text" class="form-control" id="first" placeholder="Enter First Name">
+                    <input type="text" class="form-control" id="first" name="add_first_name" placeholder="Enter First Name">
                      <label for="name">Last Name</label>
-                    <input type="text" class="form-control" id="last" placeholder="Enter Last Name">
+                <input type="text" class="form-control" id="last" name="add_last_name" placeholder="Enter Last Name">
                  
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
